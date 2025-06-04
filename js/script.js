@@ -19,7 +19,7 @@ if (typedTextElement) {
     // Countdown Timer
     function updateCountdown() {
         const now = new Date();
-        const eventDate = new Date("June 22, 2025 15:30:00 GMT-0300");
+        const eventDate = new Date("June 22, 2025 12:00:00 GMT-0300");
         const distance = eventDate - now;
 
         const daysElement = document.getElementById("days");
@@ -68,7 +68,7 @@ if (typedTextElement) {
             // Número de telefone (remova espaços, traços, parênteses)
             const phoneNumber = "61995734065";
             // Mensagem pré-definida (codificada para URL)
-            const message = encodeURIComponent("Olá! Confirmo minha presença na festa de 12 anos da Marcela no dia 22/06/2025!");
+            const message = encodeURIComponent("Olá! Confirmo minha presença na sua festa de 12 anos no dia 22/06/2025!");
             
             // Link do WhatsApp
             window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
