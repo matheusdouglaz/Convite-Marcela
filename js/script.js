@@ -10,51 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // TypeWriter Effect
-    const typedTextElement = document.getElementById("typed-text");
-    if (typedTextElement) {
-        const texts = [
-            "da Marcela!",
-            "de Magia!"
-        ];
-        let textIndex = 0;
-        let index = 0;
-        let isDeleting = false;
-        let speed = 100;
-        const fixedText = "12 Anos ";
-        
-        function typeWriter() {
-            const currentText = texts[textIndex];
-            let fullText = fixedText + currentText;
-            
-            if (isDeleting) {
-                if (index > fixedText.length) {
-                    typedTextElement.textContent = fixedText + currentText.substring(0, index - fixedText.length - 1);
-                    index--;
-                    speed = 50;
-                } else {
-                    isDeleting = false;
-                    textIndex = (textIndex + 1) % texts.length;
-                    speed = 200;
-                }
-            } else {
-                typedTextElement.textContent = fixedText + currentText.substring(0, index - fixedText.length + 1);
-                index++;
-                speed = 100;
-                
-                if (index === fullText.length) {
-                    isDeleting = true;
-                    speed = 1500;
-                }
-            }
-            
-            setTimeout(typeWriter, speed);
-        }
-        
-        typedTextElement.textContent = fixedText;
-        index = fixedText.length;
-        setTimeout(typeWriter, 1000);
-    }
+    // Texto fixo
+const typedTextElement = document.getElementById("typed-text");
+if (typedTextElement) {
+    typedTextElement.textContent = "12 Anos da Marcela!";
+}
 
     // Countdown Timer
     function updateCountdown() {
