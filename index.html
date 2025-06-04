@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festa da Barbie - 12 Anos!</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/marcela-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo-link">
+        <img src="assets/img/marcela.png" alt="Barbie Logo" class="logo-img" />
+      </a>
+
+      <div class="nav">
+        <a href="#home"><i class="bx bxs-home"></i> Início</a>
+        <a href="#detalhes"><i class="bx bxs-party"></i> Detalhes</a>
+        <a href="#localizacao"><i class="bx bxs-map"></i> Localização</a>
+      </div>
+
+      <div class="nav-responsive">
+        <a href="#home"><i class="bx bxs-home"></i> Início</a>
+        <a href="#detalhes"><i class="bx bxs-party"></i> Detalhes</a>
+        <a href="#localizacao"><i class="bx bxs-map"></i> Localização</a>
+      </div>
+
+      <div class="menu-hamburguer">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1 id="typed-text"></h1>
+        <div id="countdown">
+          <p class="countdown-text">Contagem regressiva para o grande dia!</p>
+          <div id="timer">
+            <div class="time-segment">
+              <span class="number" id="days"></span>
+              <span class="label">Dias</span>
+            </div>
+            <div class="time-segment">
+              <span class="number" id="hours"></span>
+              <span class="label">Horas</span>
+            </div>
+            <div class="time-segment">
+              <span class="number" id="minutes"></span>
+              <span class="label">Minutos</span>
+            </div>
+            <div class="time-segment">
+              <span class="number" id="seconds"></span>
+              <span class="label">Segundos</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="home-description">
+          Preparem-se para a festa mais fashion do ano! Vai ter música, dança,
+          piscina e muita diversão!
+        </p>
+
+        <div class="social-media">
+          <a href="#" target="_blank"><i class="bx bxl-instagram"></i></a>
+          <a href="#" target="_blank"><i class="bx bxl-tiktok"></i></a>
+          <a href="#" target="_blank"><i class="bx bxl-youtube"></i></a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img
+          src="assets/img/Barbie.png"
+          alt="Festa Barbie"
+          class="barbie-img"
+        />
+      </div>
+    </section>
+
+    <section class="about" id="detalhes">
+      <div class="about-content">
+        <h3>Detalhes da Festa</h3>
+        <h1>Marcela <span>Dream Party</span></h1>
+        <p>
+          <i class="bx bxs-calendar"></i> <strong>Data:</strong> 22 de Junho de
+          2025
+        </p>
+        <p>
+          <i class="bx bxs-time"></i> <strong>Horário:</strong> A partir de
+          12:00
+        </p>
+        <p>
+          <i class="bx bxs-t-shirt"></i> <strong>Dress Code:</strong> Seja
+          criativo! Vale rosa, glitter e muito brilho!
+        </p>
+
+        <div class="party-details">
+          <div class="detail-item">
+            <i class='bx bxs-droplet'></i>
+            <p>Piscina</p>
+          </div>
+          <div class="detail-item">
+            <i class="bx bxs-music"></i>
+            <p>Playlist com os maiores hits</p>
+          </div>
+          <div class="detail-item">
+            <i class="bx bxs-cake"></i>
+            <p>Bolo e doces deliciosos</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-img">
+            <img src="assets/img/barbies.png" alt="Bolo Barbie">
+      </div>
+    </section>
+
+    <section class="location" id="localizacao">
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3837.430672445887!2d-48.15229412486797!3d-15.886492684766802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTXCsDUzJzExLjQiUyA0OMKwMDgnNTkuMCJX!5e0!3m2!1spt-BR!2sbr!4v1749056580932!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="location-details">
+        <h3>Onde a magia acontece</h3>
+        <h1>Lazer_mill33</h1>
+        <p><i class="bx bxs-map"></i> Qr 1033 CJ 02 Casa 22</p>
+        <p><i class="bx bxs-phone"></i> (61) 99573-4065</p>
+
+        <div class="cta-box">
+          <p>Confirme sua presença até 10/06!</p>
+          <button class="btn" id="confirm-btn">Confirmar Presença</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Barbie Dream Party - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
